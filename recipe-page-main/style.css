@@ -23,11 +23,13 @@ body {
     font-style: normal;
     color: var(--Stone_600);
 }
+
 li {
     margin-bottom: 2vh;
     margin-top: 2vh;
 }
-.title{
+
+.title {
     font-family: "Young Serif", serif;
     font-size: 2.8vh;
     font-weight: 400;
@@ -139,52 +141,61 @@ hr {
 .inst ol {
     padding-left: 1.4vw;
     list-style-position: outside;
-    
+
     margin-bottom: 4vh;
-    
+
 }
+
 .inst li {
     padding-left: 0.5vw;
     margin-bottom: -1vh;
 }
+
 .inst {
     line-height: 3vh;
 }
+
 p {
     margin-bottom: 1vh;
     margin-top: 3vh;
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
 
 }
+
 tr {
     border-bottom: 1px solid var(--Stone_150);
 }
-tr:nth-child(4){
+
+tr:nth-child(4) {
     border-bottom: none;
 }
-td:nth-child(2){
+
+td:nth-child(2) {
     color: var(--Brown_800);
     font-weight: 600;
     padding-right: 1.9vw;
 }
-td:nth-child(1){
+
+td:nth-child(1) {
     padding-left: 1.6vw;
 }
+
 td {
     padding: 2vh;
     color: var(--Stone_600);
 }
 
 @media screen and (max-width: 375px) {
-    
+
     .container {
         margin: 0;
         padding-top: 0;
-        
-        
+
+
     }
 
     .recipe {
@@ -192,74 +203,92 @@ td {
         padding: 0 0 5vh 0;
         border-radius: 0;
     }
+
     .image img {
         border-radius: 0;
         padding: 0;
     }
+
     .head {
         padding: 3vh;
         padding-bottom: 0;
     }
+
     .time {
         margin: 3vh;
     }
+
     .time h3 {
         padding-left: 1vh;
     }
+
     .time ul {
         padding-left: 9vw;
         padding-right: 4vw;
         list-style-position: outside;
     }
+
     .time li {
         padding-left: 1vh;
         line-height: 2.5vh;
     }
+
     .ing {
         padding: 3vh;
         padding-top: 0;
     }
+
     .ing ul {
         padding-left: 2.5vh;
         list-style-position: outside;
     }
+
     .ing li {
         padding-left: 1.5vh;
         line-height: 2.5vh;
     }
-    hr{
+
+    hr {
         margin-bottom: 0vh;
     }
+
     .inst {
         padding: 3vh;
         padding-top: 0;
     }
+
     .inst ol {
         padding-left: 2.5vh;
         list-style-position: outside;
     }
+
     .inst li {
         padding-left: 1vh;
         margin-bottom: 1vh;
         line-height: 2.5vh;
     }
-    .nutri{
-            padding: 3vh;
-            padding-top: 0;
-            padding-bottom: 0;
+
+    .nutri {
+        padding: 3vh;
+        padding-top: 0;
+        padding-bottom: 0;
     }
-    .nutri p{
+
+    .nutri p {
         margin-top: 1.5vh;
         padding-top: 0;
         line-height: 2.5vh;
         padding-left: 1vh;
     }
-    td:nth-child(2){
+
+    td:nth-child(2) {
         padding-right: 14vw;
     }
-    td:nth-child(1){
+
+    td:nth-child(1) {
         padding-left: 11vw;
     }
+
     td {
         padding-bottom: 0;
 
