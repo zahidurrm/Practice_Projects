@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --txt_color: #534C64;
+    --body_pink: #FF42A5;
+    --head_txt: #0B0223;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    color: var(--head_txt);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px 200px;
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    ;
+}
+
+nav>ul li a {
+    text-decoration: none;
+    color: var(--txt_color);
+    font-weight: 500;
+}
+
+
+.social {
+    display: flex;
+    gap: 20px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: rgba(11, 2, 35, 0.10);
+    padding: 18px 24px;
+    animation-name: blink;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+
+}
+
+.social:hover {
+    i {
+        font-size: 1.5rem;
+        transition-duration: 0.6s;
+    }
+
+    border: 1px solid var(--body_pink);
+
+    span {
+        font-size: 0.9rem;
+        color: var(--body_pink);
+        transition-duration: 0.6s;
+        padding-top: 0.5vh;
+    }
+}
+
+@keyframes blink {
+    100% {
+        border: 1px solid var(--body_pink);
+    }
+}
+
+.logo {
+    font-size: 2.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.pg {
+    color: var(--body_pink) !important;
+}
+
+.maintop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 200px;
+    gap: 68px;
+    background: url(./images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.tl {
+    flex: 1;
+}
+
+.tl>h1:nth-child(1) {
+    font-size: 2.5rem;
+    color: var(--head_txt);
+}
+
+.tl>h1:nth-child(2) {
+    font-size: 4.5rem;
+}
+
+.grad_bg {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.tl>p {
+    margin: 17px;
+    color: var(--txt_color);
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+.tr {
+    flex: 1;
+}
+
+.tr>img {
+    width: 100%;
+    height: 100%;
+}
+
+.trb {
+    display: flex;
+    gap: 30px;
+    align-content: center;
+}
+
+.trb>button {
+    color: #fff;
+    background-color: #4EC5F7;
+    padding: 18px 35px;
+    border: 2px solid transparent;
+    border-radius: 48px;
+    cursor: pointer;
+}
+
+.trb>button:nth-child(1) {
+    background-color: var(--body_pink);
+}
+
+.trb>button:nth-child(1):hover {
+    background-color: transparent;
+    color: var(--body_pink);
+    border-color: var(--body_pink);
+    transition-duration: .5s;
+}
+
+.trb>button:nth-child(2):hover {
+    background-color: transparent;
+    color: #4EC5F7;
+    border-color: #4EC5F7;
+    transition-duration: .5s;
+}
+
+.mainmiddle {
+    margin: 120px 200px;
+
+}
+
+.htxt>h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.htxt>p {
+    text-align: center;
+    color: var(--txt_color);
+    margin: 20px 0 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card>p {
+    color: var(--txt_color);
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.he {
+    display: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 94.7%;
+    height: 84%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid var(--body_pink);
+    border-radius: 12px;
+}
+
+.he>i {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.he>p {
+    color: var(--body_pink);
+    font-weight: 600;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+}
+
+.card:hover .he {
+    display: block;
+}
+
+.mainbottom {
+    margin: 120px 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin: 0 200px 120px;
+}
+
+.image {
+    width: 50%;
+    position: relative;
+}
+
+.big {
+    width: 90%;
+}
+
+.small {
+    width: 30%;
+    position: absolute;
+    top: 70%;
+    right: 0;
+}
+
+.txt {
+    width: 50%;
+    position: relative;
+}
+
+.mbh {
+    font-size: 2.5rem;
+}
+
+.mbt {
+    color: var(--txt_color);
+    margin: 30px 0 0;
+}
+
+.end {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 145px 120px;
+}
+
+.end>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    border: 2px solid transparent;
+}
+
+.end>button>span {
+    padding: 0 10px 0 0;
+}
+
+.end>button:hover {
+    color: var(--body_pink);
+    border-color: var(--body_pink);
+    border-radius: 48px;
+}
+
+.ft {
+    background-color: var(--head_txt);
+    padding: 120px 250px;
+}
+
+.ft>.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.f2>ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 50px;
+    margin: 57px 0;
+}
+
+.f2>ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.bs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 57px;
+}
+.f3>ul{
+    display: grid
+    ;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+        margin: 57px 0;
+}
+.f3>ul>li{
+    
+    text-align: center;
+}
+.f3>ul>li>a {
+    color: rgba(255, 255, 255, 0.60);
+    text-decoration: none;
+}
+.cr{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+}
+@media screen and (max-width:1067px) {
+    .navbar {
+        flex-direction: column;
+        transition-duration: 0.6s;
+        padding: 38px 10px;
+    }
+
+    nav>ul {
+        flex-direction: column;
+        gap: 32px;
+        margin-top: 24px;
+        transition-duration: 0.6s;
+    }
+
+    .maintop {
+        flex-direction: column-reverse;
+        background: none;
+        padding: 0 50px;
+        gap: 10px;
+    }
+
+    .tl {
+
+        background-image: url(./images/Group\ 14.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 50px 100px;
+    }
+    .mainmiddle {
+        margin: 100px 50px;
+    }
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .mainbottom, .end {
+        margin: 0 50px 100px;
+    }
+    .mainbottom{ flex-direction: column-reverse;
+        text-align: center;
+        
+    }
+    .ft {
+        padding: 120px 30px;
+    }
+}
