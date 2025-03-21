@@ -4,11 +4,13 @@
     --Gray_500: hsl(0, 0%, 42%);
     --Gray_950: hsl(0, 0%, 7%);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: var(--Yellow);
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
@@ -16,32 +18,38 @@ body{
     font-weight: 500;
     font-size: 16px;
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 219px;
 }
-.card{
+
+.card {
     width: 383px;
     padding: 24px;
     border: 1px solid var(--Gray_950);
     border-radius: 20px;
     background-color: var(--White);
     box-shadow: 8px 8px 0 0 var(--Gray_950);
-        
+
 }
-.image,.uptxt{
+
+.image,
+.uptxt {
     margin-bottom: 24px;
 }
-.image>img{
+
+.image>img {
     height: 100%;
     width: 100%;
     object-fit: fill;
     border-radius: 10px;
 }
-.up{
-    padding:4px 12px;
+
+.up {
+    padding: 4px 12px;
     margin-bottom: 12px;
     background-color: var(--Yellow);
     border-radius: 4px;
@@ -49,39 +57,46 @@ body{
     line-height: 150%;
 
 }
-.a,.b,.c{
+
+.a,
+.b,
+.c {
     margin-top: 12px;
-    
+
     line-height: 150%;
 }
-.b{
+
+.b {
     font-size: 24px;
     font-weight: 800;
 }
-.b:hover{
+
+.b:hover {
     color: var(--Yellow);
     cursor: pointer;
 }
-.c{
+
+.c {
     color: var(--Gray_500);
     font-size: 18px;
 }
-.footer{
+
+.footer {
     display: flex;
     align-items: center;
     gap: 12px;
-    
     font-weight: 800;
     line-height: 150%;
 }
-.footer>img{
+
+.footer>img {
     height: 32px;
     width: 32px;
 }
+
 @media (max-width: 600px) {
-    .container{
+    .container {
         margin: 0 20px;
         margin-bottom: 30px;
-
     }
 }
