@@ -1,10 +1,10 @@
 :root {
   --Orangey_yellow: hsl(39, 100%, 56%);
-  --Orangey_yellow_bg: hsla(39, 100%, 56%, 0.040);
+  --Orangey_yellow_bg: hsla(39, 100%, 56%, 0.04);
   --Green_teal: hsl(166, 100%, 37%);
-  --Green_teal_bg: hsla(166, 100%, 37%, 0.040);
+  --Green_teal_bg: hsla(166, 100%, 37%, 0.04);
   --Cobalt_blue: hsl(234, 85%, 45%);
-  --Cobalt_blue_bg: hsla(234, 85%, 45%, 0.040);
+  --Cobalt_blue_bg: hsla(234, 85%, 45%, 0.04);
   --Light_slate_blue: hsl(252, 100%, 67%);
   --Light_royal_blue: hsl(241, 81%, 54%);
   --Violet_blue: hsla(256, 72%, 46%, 1);
@@ -14,7 +14,7 @@
   --Light_lavender: hsl(241, 100%, 89%);
   --Dark_gray_blue: hsl(224, 30%, 27%);
   --Light_red: hsl(0, 100%, 67%);
-  --Light_red_bg: hsla(0, 100%, 67%, 0.040);
+  --Light_red_bg: hsla(0, 100%, 67%, 0.04);
 }
 * {
   margin: 0;
@@ -27,50 +27,50 @@ body {
   background-color: var(--Pale_blue);
   font-size: 18px;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    margin-top: 100px;
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  margin-top: 100px;
 }
-.card1{
-    background: linear-gradient(var(--Light_slate_blue),var(--Light_royal_blue));
-    padding: 1.5rem;
-    text-align: center;
-    border-radius: 20px;
-    width: 250px;
-    display: block;
-    position: relative;
+.card1 {
+  background: linear-gradient(var(--Light_slate_blue), var(--Light_royal_blue));
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 20px;
+  width: 250px;
+  display: block;
+  position: relative;
 }
-.c1t{
+.c1t {
   color: var(--Light_lavender);
 }
-.score{
+.score {
   margin: 25px 50px;
   padding: 25px;
   border-radius: 1000px;
-  background: linear-gradient(var(--Violet_blue),var(--Persian_blue));
+  background: linear-gradient(var(--Violet_blue), var(--Persian_blue));
 }
-.score>h1{
+.score > h1 {
   font-size: 4rem;
   color: var(--White);
 }
-.score>p{
+.score > p {
   font-size: 14px;
   font-weight: 800;
   color: var(--Light_slate_blue);
 }
-.c1m{
+.c1m {
   font-size: 1.6rem;
   font-weight: 500;
   color: var(--White);
 }
-.c1b{
+.c1b {
   margin: 25px;
   font-size: 14px;
   color: var(--Light_lavender);
 }
-.card2{
+.card2 {
   background-color: var(--White);
   padding: 1.5rem;
   padding-left: 4rem;
@@ -80,12 +80,15 @@ body {
   margin-left: -35px;
   box-shadow: 1px 13px 20px 0px var(--Light_lavender);
 }
-.c2t{
+.c2t {
   font-weight: 800;
   margin-bottom: 25px;
   color: var(--Dark_gray_blue);
 }
-.a,.b,.c,.d{
+.a,
+.b,
+.c,
+.d {
   padding: 15px;
   display: flex;
   justify-content: space-between;
@@ -93,40 +96,42 @@ body {
   border-radius: 10px;
   margin-bottom: 10px;
 }
-.bold{
+.bold {
   font-weight: 700;
   color: var(--Dark_gray_blue);
 }
 
-.lite{
+.lite {
   font-weight: 500;
   color: var(--Light_lavender);
 }
-img{
+img {
   margin-right: 10px;
-  
 }
-.a1,.b1,.c1,.d1{
+.a1,
+.b1,
+.c1,
+.d1 {
   display: flex;
   align-items: center;
 }
-.a{
-  color:var(--Light_red) ;
-  background-color:var(--Light_red_bg) ;
+.a {
+  color: var(--Light_red);
+  background-color: var(--Light_red_bg);
 }
-.b{
-  color:var(--Orangey_yellow) ;
-  background-color:var(--Orangey_yellow_bg) ;
+.b {
+  color: var(--Orangey_yellow);
+  background-color: var(--Orangey_yellow_bg);
 }
-.c{
-  color:var(--Green_teal) ;
-  background-color:var(--Green_teal_bg) ;
+.c {
+  color: var(--Green_teal);
+  background-color: var(--Green_teal_bg);
 }
-.d{
-  color:var(--Cobalt_blue) ;
-  background-color:var(--Cobalt_blue_bg) ;
+.d {
+  color: var(--Cobalt_blue);
+  background-color: var(--Cobalt_blue_bg);
 }
-.c2b{
+.c2b {
   text-align: center;
   margin-top: 25px;
   background-color: var(--Dark_gray_blue);
@@ -136,25 +141,25 @@ img{
   font-size: 14px;
   transition: background 1s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
-.c2b:hover{
-  background: linear-gradient(var(--Light_slate_blue),var(--Light_royal_blue));
+.c2b:hover {
+  background: linear-gradient(var(--Light_slate_blue), var(--Light_royal_blue));
   cursor: pointer;
 }
 
 @media (max-width: 565px) {
-  .container{
+  .container {
     flex-direction: column;
     margin: 0;
     gap: 10px;
     align-items: center;
     transition-duration: 1s;
   }
-  .card1{
+  .card1 {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     transition-duration: 1s;
   }
-  .card2{
+  .card2 {
     margin: 0;
     padding: 1.5rem;
     margin-bottom: 30px;
