@@ -107,10 +107,13 @@ img {
 }
 @media screen and (max-width: 600px) {
   .container {
-    margin: 20px 10px;
+    margin: 40px 20px;
+    justify-content: center;
+    align-items: center;
   }
   .card {
     display: inline;
+    width: 418px;
   }
   img {
     content: url(./images/image-product-mobile.jpg);
