@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Very_Dark_Magenta: hsl(300, 43%, 22%);
+    --Soft_Pink: hsl(333, 80%, 67%);
+    --Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+    --Light_Grayish_Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-size: 15px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: left top, right 0 bottom 150%;
+    background-repeat: no-repeat, no-repeat;
+}
+.container {
+    padding: 20vh 20vw;
+}
+.cont1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.tli{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ttxt{
+    font-size: 2.5rem;
+    color: var(--Very_Dark_Magenta);
+    font-weight: 700;
+    line-height: 1.2;
+    width: 300px;
+}
+.btxt{
+    font-size: 1.2rem;
+    color: var(--Dark_Grayish_Magenta);
+    font-weight: 400;
+    line-height: 1.5;
+    width: 450px;
+}
+.fblk, .sblk, .tblk{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--Light_Grayish_Magenta);
+    padding: 15px 30px;
+    color: var(--Very_Dark_Magenta);
+    font-weight: 700;
+    border-radius: 5px;
+}
+.tri{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.star>img{
+    width: 10px;
+}
+.fblk{
+    transform: translatex(-60px);
+}
+.sblk{
+    transform: translatex(-30px);
+}
+.cont2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-top: 100px;
+}
+.card{
+    background-color: var(--Very_Dark_Magenta);
+    border-radius: 5px;
+    padding: 30px 45px;
+}
+.intro>img{
+    width: 30px;
+    border-radius: 100px;
+}
+.name{
+    color: var(--White);
+    font-weight: 400;
+}
+.vb{
+    color: var(--Soft_Pink);
+    font-weight: 400;
+    font-size: .8rem;
+}
+.intro{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.introtxt{
+    line-height: 15px;
+}
+.about{
+    color: var(--Light_Grayish_Magenta);
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 20px;
+    width: 14vw;
+}
+.card1{
+    transform: translateY(-40px);
+}
+.card2{
+    transform: translateY(-20px);
+}
+@media screen and (max-width: 768px) {
+    body{
+        background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+        background-position: left top, right 0 bottom 150%;
+        background-repeat: no-repeat, no-repeat;
+    }
+    .container{
+        padding: 10vh 5vw;
+    }
+    .cont1{
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+    .tli{
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+    .ttxt{
+        font-size: 2rem;
+        width: 84%;
+    }
+    .btxt{
+        font-size: 1rem;
+        width: 88%;
+    }
+    .fblk, .sblk, .tblk{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .star>img{
+        width: 15px;
+    }
+    .fblk{
+        transform: translatex(0);
+        margin-top: 5vh;
+    }
+    .sblk{
+        transform: translatex(0);
+    }
+    .cont2{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin: 0 25px;
+        margin-top: 5vh;
+    }
+    .card{
+        width: 80%;
+        transform: translateY(0);
+        padding: 30px 30px;
+    }
+    .about{
+        width: 100%;
+    }
+    .card>.about{
+        width: 100%;
+    }
+    
+}
