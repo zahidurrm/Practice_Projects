@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+    --Transparent_white_paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very_light_gray: hsl(0, 0%, 95%);
+}
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+
+    background-color: var(--Very_light_gray);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 15vh 18vw;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.card {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.icon>img {
+    height: 2rem;
+}
+
+.card>h1 {
+    font-family: "Big Shoulders", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--Very_light_gray);
+}
+
+.card>p {
+    color: var(--Transparent_white_paragraphs);
+    width: 97%;
+    line-height: 1.7rem;
+    font-weight: 300;
+
+}
+
+.card1 {
+    background-color: var(--Bright_orange);
+    border-radius: 5px 0 0 5px;
+}
+
+.card2 {
+    background-color: var(--Dark_cyan);
+}
+
+.card3 {
+    background-color: var(--Very_dark_cyan);
+    border-radius: 0 5px 5px 0;
+}
+
+.button {
+    margin-top: 4rem;
+}
+
+.button>button {
+    background-color: var(--Very_light_gray);
+    color: var(--Very_light_gray);
+    border: none;
+    padding: 0.9rem 2rem;
+    border-radius: 100rem;
+    border: 1px solid var(--Very_light_gray);
+    font-weight: 500;
+    cursor: pointer;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    transition: all 0.3s ease-in-out;
+}
+
+.card1>.button>button {
+    color: var(--Bright_orange);
+}
+
+.card2>.button>button {
+    color: var(--Dark_cyan);
+}
+
+.card3>.button>button {
+    color: var(--Very_dark_cyan);
+}
+
+.card1>.button>button:hover {
+    background-color: var(--Bright_orange);
+    color: var(--Very_light_gray);
+    border: 1px solid var(--Very_light_gray);
+}
+
+.card2>.button>button:hover {
+    background-color: var(--Dark_cyan);
+    color: var(--Very_light_gray);
+    border: 1px solid var(--Very_light_gray);
+}
+
+.card3>.button>button:hover {
+    background-color: var(--Very_dark_cyan);
+    color: var(--Very_light_gray);
+    border: 1px solid var(--Very_light_gray);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        margin: 5vh 5vw;
+    }
+
+    .card>p {
+        width: 95%;
+    }
+
+    .button {
+        margin-top: 0rem;
+    }
+
+    .card1 {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .card3 {
+        border-radius: 0 0 5px 5px;
+    }
+}
