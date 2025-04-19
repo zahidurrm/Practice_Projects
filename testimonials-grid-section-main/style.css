@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Purple_50: hsl(260, 100%, 95%);
+    --Purple_300: hsl(264, 82%, 80%);
+    --Purple_500: hsl(263, 55%, 52%);
+    --White: hsl(0, 0%, 100%);
+    --Grey_100: hsl(214, 17%, 92%);
+    --Grey_200: hsl(0, 0%, 81%);
+    --Grey_400: hsl(224, 10%, 45%);
+    --Grey_500: hsl(217, 19%, 35%);
+    --Dark_blue: hsl(219, 29%, 14%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    background-color: var(--Grey_100);
+}
+
+.card1 {
+    grid-column: 1 / span 2;
+    color: var(--Purple_300);
+    background-color: var(--Purple_500);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% 0;
+}
+
+.card2 {
+    grid-column: 3 / span 1;
+    background-color: var(--Grey_500);
+    color: var(--Grey_200);
+}
+
+.card3 {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 2;
+    background-color: var(--White);
+    color: var(--Black);
+    width: 250px;
+}
+
+.card4 {
+    grid-column: 1 / span 1;
+    background-color: var(--White);
+    color: var(--Black);
+}
+
+.card5 {
+    grid-column: 2 / span 2;
+    background-color: var(--Dark_blue);
+    color: var(--Grey_100);
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 58px 45px 20px 0px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.head {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile {
+    height: 30px;
+    border-radius: 100%;
+}
+
+.intro>p:nth-child(2) {
+    font-size: 10px;
+}
+
+.ftxt {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 15px 0;
+
+}
+
+.card1>.ftxt {
+    color: var(--Purple_50);
+}
+
+.card2>.ftxt {
+    color: var(--Grey_100);
+}
+
+.card3>.ftxt {
+    color: var(--Dark_blue);
+}
+
+.card4>.ftxt {
+    color: var(--Dark_blue);
+}
+
+.stxt {
+    font-weight: 500;
+    line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 5vh;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-gap: 20px;
+    }
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5 {
+        grid-row: span 1;
+        grid-column: span 1;
+        width: 100%;
+    }
+    
+}
