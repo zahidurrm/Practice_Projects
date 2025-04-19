@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Gradient: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    --Pale_Blue: hsl(243, 100%, 93%);
+    --Grayish_Blue: hsl(229, 7%, 55%);
+    --Dark_Blue: hsl(228, 56%, 26%);
+    --Very_Dark_Blue: hsl(229, 57%, 11%);
+}
+
+body {
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background: url(./images/bg-desktop.png) no-repeat right bottom fixed;
+    background-size: contain;
+    background-color: var(--Very_Dark_Blue);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 35vh;
+    width: 100%;
+    gap: 25px;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    background: var(--Dark_Blue);
+    border-radius: 10px 100px 10px 10px;
+    padding: 40px;
+    width: 360px;
+    height: 200px;
+    gap: 35px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 140px;
+    width: 450px;
+    margin-top: 60px;
+    padding: 30px 40px;
+    background-color: var(--Dark_Blue);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.uptxt {
+    color: var(--Pale_Blue);
+    font-size: 12px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 140px;
+    margin-top: 1px;
+}
+
+.iconset {
+    background-color: var(--Very_Dark_Blue);
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+}
+
+.eicon {
+    height: 20px;
+}
+
+.c2txt1 {
+    color: var(--Pale_Blue);
+    font-size: 12px;
+    font-weight: 200;
+
+}
+
+.lc {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--Very_Dark_Blue);
+    display: flex;
+    align-items: center;
+}
+
+.lb {
+    width: 81.5%;
+    height: 80%;
+    border-radius: 10px;
+    background-image: var(--Gradient);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-left: 2px;
+}
+
+.ld {
+    width: 14px;
+    height: 80%;
+    margin: 2px;
+    border-radius: 100px;
+    background-color: white;
+}
+
+.lctxt {
+    color: var(--Pale_Blue);
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.tooltip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: var(--Very_Dark_Blue);
+    padding: 15px 15px;
+    width: 120px;
+    border-radius: 5px 5px 0px 5px;
+    background-color: white;
+    transform: translate(190%, -150%);
+    z-index: 1;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 98%;
+    left: 84%;
+    border-width: 0px;
+    border-top: 20px solid white;
+    border-left: 20px solid transparent;
+    border-style: solid;
+    border-color: rgb(255, 255, 255) transparent transparent transparent;
+}
+
+.bigtxt {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--Very_Dark_Blue);
+}
+
+.c2txt2 {
+    color: var(--Grayish_Blue);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background: url(./images/bg-mobile.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .container {
+        margin: 20vh 5vw;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .card1 {
+        width: 80%;
+        height: 200px;
+        padding: 20px;
+    }
+
+    .card2 {
+        width: 80%;
+        height: 200px;
+        padding: 20px;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .lc {
+        width: 100%;
+    }
+
+    .tooltip {
+        transform: translate(65%, 180%);
+        border-radius: 10px;
+    }
+
+    .tooltip::after {
+        visibility: hidden;
+    }
+
+    .c2txt1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .c2txt1>b {
+        margin: 0 5px;
+    }
+}
