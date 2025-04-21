@@ -221,9 +221,15 @@ body {
         grid-column: 1;
         grid-row: 7 ; 
         display: grid;
+        grid-template-columns: auto;
         grid-template-rows: 1fr 1fr; 
         grid-gap: 30px;
         justify-items: center;
+        max-width: auto;
+        max-height: auto;
+        min-width: auto;
+        min-width: none;
+        width: 100%;
     }
     .c1t1{
         font-size: 3rem;
