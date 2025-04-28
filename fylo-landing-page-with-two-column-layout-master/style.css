@@ -114,7 +114,7 @@ input[type="text"]:invalid:not(:placeholder-shown)+.error-message {
     color: white;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
-    box-shadow:  4px 4px 10px 0px rgba(0, 0, 0, .3);
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, .3);
 }
 
 .afbtn:hover {
@@ -306,6 +306,7 @@ footer {
 
 /* Tablet (768px - 1199px) */
 @media screen and (max-width: 1199px) {
+
     .art1,
     .cont {
         flex-direction: column-reverse;
@@ -345,7 +346,7 @@ footer {
         max-width: 100%;
     }
 
-    .a3frm > input {
+    .a3frm>input {
         max-width: 100%;
     }
 }
@@ -369,7 +370,8 @@ footer {
     .a1lsht {
         font-size: 1.8rem;
     }
-    .a2lsst{
+
+    .a2lsst {
         text-wrap: wrap;
         width: auto;
     }
@@ -378,11 +380,12 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    .afbtn{
+
+    .afbtn {
         width: 100%;
         height: 50px;
     }
-    
+
     .a1rs,
     .a2rs {
         width: 100%;
@@ -400,7 +403,7 @@ footer {
         align-items: center;
     }
 
-    .a3frm > button {
+    .a3frm>button {
         width: 100%;
         max-width: 100%;
     }
@@ -415,7 +418,8 @@ footer {
     .link2 {
         margin-top: 2rem;
     }
-    .social{
+
+    .social {
         display: flex;
         text-align: center;
         align-items: center;
@@ -430,10 +434,12 @@ footer {
     .a1lsht {
         font-size: 1.5rem;
     }
-    .ni{
+
+    .ni {
         width: 25%;
     }
-    .nl>a{
+
+    .nl>a {
         font-size: 90%;
         text-wrap: nowrap;
     }
@@ -452,13 +458,17 @@ footer {
         width: 100%;
         max-width: 20rem;
     }
+
     .a2frm {
         padding: 1rem;
     }
-    .a3frm>input,button{
+
+    .a3frm>input,
+    button {
         width: auto;
     }
-    nav>svg{
+
+    nav>svg {
         width: 100px;
         height: 100px;
     }
